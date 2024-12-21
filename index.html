@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css" integrity="sha512-5Hs3dF2AEPkpNAR7UiOHba+lRSJNeM2ECkwxUIxC1Q/FLycGTbNapWXB4tP889k5T5Ju8fs4b1P5z/iB4nMfSQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Recipe App</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <input type="checkbox" id="check">
+            <label for="check" class="checkbtn">
+                <i class="fas fa-bars"></i>
+            </label>
+            <label class="logo">RecipeApp</label>
+            <ul>
+                <li><a class="active" href="#Home">Home</a></li>
+                <li><a href="#ingredients">Manage Ingredients</a></li>
+                <li><a href="#feedback">Feedback</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    <div id="Home">
+        <section class="main-content">
+            <div class="main">
+                <h1>Welcome to the Recipe App</h1>
+                <h1>AI Recipe Generator & Manager</h1>
+                <p>This tool assists you in generating recipes using the leftovers you have at home. Simply input each ingredient you have available, pressing Enter after each addition. Once all items have been added, click the "Generate Recipe" button to receive your custom recipe.</p>
+            </div>    
+        </section>
+    </div>
+
+    <div id="ingredients">
+        <section class="ingredients-section">
+            <div class="container">
+                <h1>Ingredients Manager</h1>
+                <input type="text" id="ingredientInput" placeholder="Enter an ingredient">
+                <button id="addBtn">Add Ingredient</button>
+    
+                <div class="ingredients-list">
+                    <h2>Your Ingredients</h2>
+                    <ul id="ingredientList"></ul>
+                </div>
+
+                <div class="recipe-suggestions">
+                    <h2>Suggested Recipes</h2>
+                    <ul id="recipeList"></ul>
+                </div>
+
+            </div>
+        </section>
+    </div>
+
+    <div id="feedback-">
+        <section id="feedback" class="feedback-section">
+            <div class="content-box">
+                <h1>Feedback</h1>
+                <p>We would love to hear your thoughts on our app!</p>
+                <form action="#">
+                    <textarea id="feedback" name="feedback" rows="4" cols="50" placeholder="Share your thoughts here..." required></textarea><br><br>
+                    <button type="submit" class="btn">Submit Feedback</button>
+                </form>
+            </div>
+        </section>    
+    </div>
+
+    <div id="contact">
+        <section class="contact">
+            <div class="contact-section">
+                <h2 class="heading">Contact <span>Me</span></h2>
+                <form action="#">
+                    <div class="input-box">
+                        <label for="fullname">Full Name</label>
+                        <input type="text" id="fullname" placeholder="Your full name" required>
+                    </div>
+                    <div class="input-box">
+                        <label for="email">Email</label>
+                        <input type="email" id="email" placeholder="Your email" required>
+                    </div>
+                    <div class="input-box">
+                        <label for="message">Message</label>
+                        <textarea id="message" placeholder="Your message" required></textarea>
+                    </div>
+                    <button type="submit" class="btn">Submit</button>
+                </form>
+            </div>
+        </section>
+    </div>
+
+
+
+    <footer>
+        <p>&copy; 2024 Recipe App. All Rights Riserved </p>
+    </footer>
+
+    <script type="module" src="script.js"></script>
+</body>
+</html>
